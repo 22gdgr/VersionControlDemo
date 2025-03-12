@@ -1,3 +1,4 @@
+# Version 2 
 def add(num1, num2):
     return num1 + num2
 
@@ -23,7 +24,7 @@ def main():
         choice = input("Enter choice (1 to 5): ")
 
         if choice == '5':
-            print("Have a good day. Goodbye!")
+            print("Exiting!")
             break
         elif choice in ['1', '2', '3', '4']:
             while True:
@@ -32,7 +33,7 @@ def main():
                     number1 = int(n1)
                     break
                 else:
-					print("Invalid input! Please enter a non-negative integer.")
+					print("Invalid! Please enter a non-negative integer.")
 
             while True:
                 n2 = input("Enter the second non-negative integer: ")
@@ -40,7 +41,7 @@ def main():
                     number2 = int(n2)
                     break
                 else:
-                    print("Invalid input! Please enter a non-negative integer.")
+                    print("Invalid! Please enter a non-negative integer.")
 
             if choice == '4' and number2 == 0:
                 print("Division by zero is not allowed!")
@@ -63,7 +64,7 @@ def main():
             print(f"{op} of {number1} and {number2} gives: {ans}")
             print("-"*45)
 		else:
-            print("Your choice is invalid. Please select a valid option.")
+            print("Your choice is invalid. Please select a valid choice.")
 
 if __name__ == "__main__":
     main()
